@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio do Developer Eduardo Prado da Silva">
+    <title>PRADO - PORTFÓLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0A0A0A;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            background-color: #111;
+        }
+
+        .cabeçalho-menu {
+            display: flex;
+            gap: 20px;
+        }
+
+        .cabeçalho-item {
+            padding: 8px 12px;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .cabeçalho-item:hover {
+            background-color: #fff;
+            color: #111;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        /* Seção de apresentação */
+        .conteudo-apresentacao {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+
+        .imagem-redonda {
+            width: 220px;            /* tamanho da imagem */
+            height: 220px;
+            border-radius: 50%;      /* deixa redonda */
+            border: 5px solid #111;
+            overflow: hidden;
+        }
+
+        .imagem-redonda img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;       /* mantém a proporção sem distorcer */
+            display: block;
+        }
+
+        .conteudo-apresentacao-nome {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .conteudo-apresentacao-funcao {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .conteudo-apresentacao-botao {
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            background-color: #fff;
+            color: #111;
+            border: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .conteudo-apresentacao-botao:hover {
+            background-color: #555;
+            color: #fff;
+        }
+
+        section {
+            max-width: 800px;
+            margin-bottom: 40px;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #111;
+            font-size: 0.9rem;
+        }
+
+        /* Responsividade */
+        @media(max-width: 768px) {
+            .imagem-redonda {
+                width: 160px;
+                height: 160px;
+            }
+
+            .conteudo-apresentacao-nome {
+                font-size: 2rem;
+            }
+
+            .conteudo-apresentacao-funcao {
+                font-size: 1.2rem;
+            }
+
+            .vermelho {
+                color: red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="cabeçalho-menu">
+            <a class="cabeçalho-item" href="https://www.instagram.com/nbk_eduardo/">Instagram</a>
+            <a class="cabeçalho-item" href="https://x.com/tatatreze_nbk">X/Twitter</a>
+            <a class="cabeçalho-item" href="https://github.com/PRADOZZZ">GitHub</a>
+            <a class="cabeçalho-item" href="https://www.linkedin.com/in/eduardo-prado-da-silva-73022524b/">Linkedin</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seção de apresentação -->
+        <section class="conteudo-apresentacao">
+            <div class="imagem-redonda">
+                <img src="eu 2.0.jpg" alt="Imagem de Eduardo Prado">
+            </div>
+            <h1 class="conteudo-apresentacao-nome">Eduardo Prado da Silva</h1>   
+            <h2 class="conteudo-apresentacao-funcao">Developer & Inovador</h2>
+            <button class="conteudo-apresentacao-botao">SITE DA DUPLA</button>
+        </section>
+
+        <!-- Seção de informações pessoais -->
+        <section class="conteudo-dados">
+            <h3><strong class="vermelho">Informações:</strong></h3>
+            <p><strong class="vermelho">Data de nascimento:</strong> 22/11/2007</p>
+            <p><strong class="vermelho">Telefone:</strong> 11 94105-5353</p>
+            <p><strong class="vermelho">Email para contato:</strong> edulary330@gmail.com</p> 
+        </section>
+
+        <!-- Seção Sobre mim -->
+        <section class="conteudo-texto">
+            <h3><strong>Sobre mim:</strong></h3>
+            <p>Olá! Sou <strong>Eduardo Prado da Silva</strong>, <strong>desenvolvedor apaixonado por tecnologia e inovação</strong>, dedicado a transformar ideias em soluções digitais concretas e funcionais. Desde jovem, fui movido pela curiosidade de entender como tudo funciona, e hoje aplico esse olhar curioso para criar experiências digitais que fazem diferença.</p>
+
+            <p>Meu trabalho é unir <strong>criatividade, técnica e estratégia</strong>. Cada projeto que assumo é pensado para gerar <strong>valor real</strong>, seja no design, na usabilidade ou na performance. Adoro desafios complexos e acredito que cada problema é uma oportunidade de aprender, inovar e entregar resultados que realmente impactam clientes e usuários.</p>
+
+            <p>Sou um profissional <strong>proativo, detalhista e comprometido</strong>, capaz de se adaptar rapidamente a diferentes contextos e demandas, sempre mantendo o foco em resultados. Mais do que apenas programar, busco <strong>resolver problemas, otimizar processos e criar soluções inteligentes</strong>.</p>
+
+            <p>Meu diferencial é a capacidade de <strong>aliar criatividade e inovação à funcionalidade</strong>, entregando soluções que não apenas funcionam, mas encantam e impactam. Cada linha de código é pensada, cada design é planejado e cada projeto tem como objetivo superar expectativas.</p>
+
+            <h3><strong>O que gosto de fazer:</strong></h3>
+            <ul>
+                <li><strong>Design gráfico e edição de imagens</strong>, criando interfaces mais atraentes e inovadoras;</li>
+                <li><strong>Jogos de lógica e quebra-cabeças</strong>, para aprimorar raciocínio lógico e resolução de problemas;</li>
+                <li><strong>Estudos de novas tecnologias e tendências</strong>, sempre em busca de ferramentas que agreguem valor;</li>
+                <li><strong>Criação de pequenos projetos de automação</strong>, explorando como a tecnologia pode otimizar processos;</li>
+                <li><strong>Participar de comunidades e eventos de tecnologia</strong>, conectando-me com profissionais e ideias inspiradoras.</li>
+            </ul>
+
+            <p>Estou aberto a <strong>novos desafios, colaborações e oportunidades</strong> com empresas e clientes que busquem inovação, excelência e soluções digitais de impacto. Se você procura um desenvolvedor <strong>apaixonado, estratégico e criativo</strong>, estou pronto para transformar ideias em projetos memoráveis.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025, all rights reserved by developer Prado.</p>
+    </footer>
+</body>
+</html>
