@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfólio do Developer Eduardo Prado da Silva">
     <title>PRADO - PORTFÓLIO</title>
-    <link rel="stylesheet" href="style.css">
+    
+
+    <!-- Ícones Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
     <style>
-        /* Reset básico */
+        /* Reset */
         * {
             margin: 0;
             padding: 0;
@@ -19,6 +23,7 @@
             background-color: #0A0A0A;
             color: #ffffff;
             line-height: 1.6;
+            scroll-behavior: smooth;
         }
 
         a {
@@ -26,38 +31,123 @@
             text-decoration: none;
         }
 
+        /* HEADER */
         header {
-            display: flex;
-            justify-content: center;
-            padding: 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
             background-color: #111;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 25px;
+            z-index: 1000;
         }
 
-        .cabeçalho-menu {
+        .logo {
+            font-weight: 600;
+            font-size: 35px;
+        }
+
+        /* Ícone do menu */
+        .menu-icon {
+            width: 30px;
+            height: 22px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            cursor: pointer;
+        }
+
+        .menu-icon div {
+            width: 100%;
+            height: 4px;
+            background-color: #fff;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+
+        /* Menu lateral */
+        nav {
+            position: fixed;
+            top: 0;
+            right: -270px;
+            width: 270px;
+            height: 100%;
+            background-color: #111;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 80px 0 40px;
+            transition: right 0.3s ease;
+        }
+
+        nav.active {
+            right: 0;
+        }
+
+        .nav-links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+        }
+
+        nav a {
+            font-size: 1.2rem;
+            padding: 10px;
+            border-bottom: 1px solid #444;
+            width: 80%;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: #fff;
+            color: #111;
+            border-radius: 5px;
+        }
+
+        /* Ícones das redes sociais */
+        .social-icons {
             display: flex;
             gap: 20px;
         }
 
-        .cabeçalho-item {
-            padding: 8px 12px;
-            border: 1px solid #fff;
-            border-radius: 5px;
-            transition: all 0.3s ease;
+        .social-icons a svg {
+            width: 26px;
+            height: 26px;
+            color: #fff;
+            transition: 0.3s;
         }
 
-        .cabeçalho-item:hover {
-            background-color: #fff;
-            color: #111;
+        .social-icons a:hover svg {
+            color: #00acee;
+            transform: scale(1.1);
         }
 
+        /* Animação do ícone ao abrir o menu */
+        .menu-icon.active div:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .menu-icon.active div:nth-child(2) {
+            opacity: 0;
+        }
+
+        .menu-icon.active div:nth-child(3) {
+            transform: rotate(-45deg) translate(6px, -6px);
+        }
+
+        /* MAIN */
         main {
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 40px 20px;
+            padding: 120px 20px 40px;
         }
 
-        /* Seção de apresentação */
         .conteudo-apresentacao {
             text-align: center;
             display: flex;
@@ -68,9 +158,9 @@
         }
 
         .imagem-redonda {
-            width: 220px;            /* tamanho da imagem */
+            width: 220px;
             height: 220px;
-            border-radius: 50%;      /* deixa redonda */
+            border-radius: 50%;
             border: 5px solid #111;
             overflow: hidden;
         }
@@ -78,7 +168,7 @@
         .imagem-redonda img {
             width: 100%;
             height: 100%;
-            object-fit: cover;       /* mantém a proporção sem distorcer */
+            object-fit: cover;
             display: block;
         }
 
@@ -102,6 +192,10 @@
             border-radius: 5px;
             transition: all 0.3s ease;
         }
+
+        .SITE {
+            color: white;
+         }
 
         .conteudo-apresentacao-botao:hover {
             background-color: #555;
@@ -148,68 +242,85 @@
             .conteudo-apresentacao-funcao {
                 font-size: 1.2rem;
             }
-
-            .vermelho {
-                color: red;
-            }
         }
     </style>
 </head>
 <body>
+
     <header>
-        <nav class="cabeçalho-menu">
-            <a class="cabeçalho-item" href="https://www.instagram.com/nbk_eduardo/">Instagram</a>
-            <a class="cabeçalho-item" href="https://x.com/tatatreze_nbk">X/Twitter</a>
-            <a class="cabeçalho-item" href="https://github.com/PRADOZZZ">GitHub</a>
-            <a class="cabeçalho-item" href="https://www.linkedin.com/in/eduardo-prado-da-silva-73022524b/">Linkedin</a>
+        <div class="logo">NBK's</div>
+
+        <div class="menu-icon" id="menuBtn">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        
+    <nav class="SITE">
+       <a href="Perfil Pessoal.html">SITE DO OTARIO</a>
+    </nav>
+        
+        <nav id="menu">
+            <div class="nav-links">
+                <a href="#inicio">Início</a>
+                <a href="#informacoes">Informações</a>
+                <a href="#sobre">Sobre mim</a>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/nbk_eduardo/" target="_blank"><i data-lucide="instagram"></i></a>
+                <a href="https://x.com/tatatreze_nbk" target="_blank"><i data-lucide="twitter"></i></a>
+                <a href="https://github.com/PRADOZZZ" target="_blank"><i data-lucide="github"></i></a>
+                <a href="https://www.linkedin.com/in/eduardo-prado-da-silva-73022524b/" target="_blank"><i data-lucide="linkedin"></i></a>
+            </div>
         </nav>
     </header>
 
-    <main>
-        <!-- Seção de apresentação -->
+    <main id="inicio">
         <section class="conteudo-apresentacao">
             <div class="imagem-redonda">
-                <img src="eu 2.0.jpg" alt="Imagem de Eduardo Prado">
+                <img src="eu.jpg" alt="Imagem de Eduardo Prado">
             </div>
             <h1 class="conteudo-apresentacao-nome">Eduardo Prado da Silva</h1>   
-            <h2 class="conteudo-apresentacao-funcao">Developer & Inovador</h2>
-            <button class="conteudo-apresentacao-botao">SITE DA DUPLA</button>
+            <h2 class="conteudo-apresentacao-funcao">Developer</h2>
+           
+       
         </section>
 
-        <!-- Seção de informações pessoais -->
-        <section class="conteudo-dados">
-            <h3><strong class="vermelho">Informações:</strong></h3>
-            <p><strong class="vermelho">Data de nascimento:</strong> 22/11/2007</p>
-            <p><strong class="vermelho">Telefone:</strong> 11 94105-5353</p>
-            <p><strong class="vermelho">Email para contato:</strong> edulary330@gmail.com</p> 
+        <section class="conteudo-dados" id="informacoes">
+            <h3><strong>Informações:</strong></h3>
+            <p><strong>Data de nascimento:</strong> 22/11/2007</p>
+            <p><strong>Telefone:</strong> 11 94105-5353</p>
+            <p><strong>Email:</strong> edulary330@gmail.com</p> 
         </section>
 
-        <!-- Seção Sobre mim -->
-        <section class="conteudo-texto">
+        <section class="conteudo-texto" id="sobre">
             <h3><strong>Sobre mim:</strong></h3>
-            <p>Olá! Sou <strong>Eduardo Prado da Silva</strong>, <strong>desenvolvedor apaixonado por tecnologia e inovação</strong>, dedicado a transformar ideias em soluções digitais concretas e funcionais. Desde jovem, fui movido pela curiosidade de entender como tudo funciona, e hoje aplico esse olhar curioso para criar experiências digitais que fazem diferença.</p>
+            <p>Olá! Sou <strong>Eduardo Prado da Silva</strong>, um <strong>desenvolvedor apaixonado por tecnologia e inovação</strong>, dedicado a transformar ideias em soluções digitais concretas e funcionais. Desde jovem, fui movido pela curiosidade de entender como tudo funciona — e hoje aplico esse olhar para criar experiências digitais que fazem diferença.</p>
+            <p>Meu trabalho é unir <strong>criatividade, técnica e estratégia</strong>. Cada projeto é pensado para gerar <strong>valor real</strong>, seja no design, na usabilidade ou na performance. Adoro desafios complexos e acredito que cada problema é uma oportunidade de aprender e inovar.</p>
+        </section>
 
-            <p>Meu trabalho é unir <strong>criatividade, técnica e estratégia</strong>. Cada projeto que assumo é pensado para gerar <strong>valor real</strong>, seja no design, na usabilidade ou na performance. Adoro desafios complexos e acredito que cada problema é uma oportunidade de aprender, inovar e entregar resultados que realmente impactam clientes e usuários.</p>
+        <section class="trabalhos">
+            <h3>Meus projetos:</h3>
 
-            <p>Sou um profissional <strong>proativo, detalhista e comprometido</strong>, capaz de se adaptar rapidamente a diferentes contextos e demandas, sempre mantendo o foco em resultados. Mais do que apenas programar, busco <strong>resolver problemas, otimizar processos e criar soluções inteligentes</strong>.</p>
 
-            <p>Meu diferencial é a capacidade de <strong>aliar criatividade e inovação à funcionalidade</strong>, entregando soluções que não apenas funcionam, mas encantam e impactam. Cada linha de código é pensada, cada design é planejado e cada projeto tem como objetivo superar expectativas.</p>
-
-            <h3><strong>O que gosto de fazer:</strong></h3>
-            <ul>
-                <li><strong>Design gráfico e edição de imagens</strong>, criando interfaces mais atraentes e inovadoras;</li>
-                <li><strong>Jogos de lógica e quebra-cabeças</strong>, para aprimorar raciocínio lógico e resolução de problemas;</li>
-                <li><strong>Estudos de novas tecnologias e tendências</strong>, sempre em busca de ferramentas que agreguem valor;</li>
-                <li><strong>Criação de pequenos projetos de automação</strong>, explorando como a tecnologia pode otimizar processos;</li>
-                <li><strong>Participar de comunidades e eventos de tecnologia</strong>, conectando-me com profissionais e ideias inspiradoras.</li>
-            </ul>
-
-            <p>Estou aberto a <strong>novos desafios, colaborações e oportunidades</strong> com empresas e clientes que busquem inovação, excelência e soluções digitais de impacto. Se você procura um desenvolvedor <strong>apaixonado, estratégico e criativo</strong>, estou pronto para transformar ideias em projetos memoráveis.</p>
         </section>
     </main>
 
     <footer>
         <p>© 2025, all rights reserved by developer Prado.</p>
     </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const menu = document.getElementById('menu');
+
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('active');
+            menuBtn.classList.toggle('active');
+        });
+
+        lucide.createIcons();
+    </script>
 </body>
 </html>
