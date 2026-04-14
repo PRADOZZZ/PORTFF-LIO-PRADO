@@ -11,19 +11,16 @@
   <meta property="og:type" content="website">
   <title>Eduardo Prado — Desenvolvedor Front-End | Portfólio</title>
 
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
 
-  <!-- Styles -->
   <link rel="stylesheet" href="style.css">
-
-  <!-- Icons -->
   <script src="https://unpkg.com/lucide@latest" defer></script>
 </head>
 <body>
   <a href="#main-content" class="skip-link">Ir para o conteúdo principal</a>
+  
   <header class="nav" id="nav" role="banner">
     <div class="nav-inner container">
       <a class="nav-logo" href="#hero" aria-label="Ir para o topo">Prado<span>.</span></a>
@@ -42,48 +39,24 @@
   </header>
 
   <main id="main-content">
-    <section class="hero section" id="hero" aria-labelledby="hero-title">
-      <div class="hero-bg" aria-hidden="true"></div>
-      <div class="hero-grid" aria-hidden="true"></div>
-      <div class="container hero-inner">
-        <div class="hero-content">
-          <p class="hero-badge reveal" aria-hidden="true">
-            <i data-lucide="code" aria-hidden="true"></i>
-            Desenvolvedor Front-End
-          </p>
-          <h1 class="hero-title reveal reveal-delay-1" id="hero-title">
-            Olá, sou <span>Eduardo Prado</span>
-          </h1>
-          <p class="hero-subtitle reveal reveal-delay-2">
-            Transformo ideias em interfaces rápidas, acessíveis e fáceis de usar. Foco em código limpo e experiência do usuário.
-          </p>
-          <div class="hero-ctas reveal reveal-delay-3">
-            <a href="#projects" class="btn btn-primary">
-              <i data-lucide="folder-kanban" aria-hidden="true"></i>
-              Ver projetos
-            </a>
-            <a href="#contact" class="btn btn-secondary">
-              <i data-lucide="mail" aria-hidden="true"></i>
-              Contato
-            </a>
-          </div>
-        </div>
-        <div class="hero-visual reveal reveal-delay-2">
-          <div class="hero-image-wrap">
-            <img src="eu.jpeg" alt="Eduardo Prado da Silva, desenvolvedor" width="320" height="320" loading="eager">
-          </div>
-        </div>
-      </div>
-    </section>
+  <section class="hero-full" id="hero">
+    
+  <div class="hero-overlay"><img src="imgs/PRADO@.png" alt=""></div>
+  <div class="hero-content">
+    <h1 class="hero-title">Eduardo Prado</h1>
+    <p class="hero-role">CONSTRUTOR DE EXPERIÊNCIAS DIGITAIS</p>
+    <div class="hero-ctas">
+      <a href="#projects" class="btn btn-primary">Projetos</a>
+      <a href="#contact" class="btn btn-secondary">Contato</a>
+    </div>
+  </div>
+</section>
 
     <section class="section projects" id="projects" aria-labelledby="projects-title">
       <div class="container">
-        <header class="projects-header">
+        <div class="projects-header">
           <h2 class="section-title reveal" id="projects-title">Projetos</h2>
-          <p class="section-subtitle reveal">
-            Alguns dos trabalhos recentes: aplicações web, interfaces e experimentos com as melhores práticas.
-          </p>
-        </header>
+        </div>
         <div class="projects-grid">
           <article class="project-card reveal" aria-labelledby="project-pinnedloading">
             <div class="project-image">
@@ -110,13 +83,14 @@
 
           <article class="project-card reveal reveal-delay-1" aria-labelledby="project-vozes">
             <div class="project-image">
-              <div class="project-image-placeholder project-image-placeholder--alt" role="img" aria-label="Vozes Silenciadas"></div>
+              <div class="project-image-placeholder project-image-placeholder--alt" role="img" aria-label="Vozes Silenciadas"><img src="imgs/vozes silenciadas.png" alt="Vozes Silenciadas"></div>
             </div>
             <div class="project-body">
               <h3 class="project-title" id="project-vozes">Vozes Silenciadas</h3>
               <p class="project-desc">
                 Projeto web com foco em narrativa e conscientização. Interface imersiva e acessível.
               </p>
+              
               <div class="project-tech" aria-label="Tecnologias">
                 <span>HTML</span>
                 <span>CSS</span>
@@ -156,10 +130,10 @@
 
           <article class="project-card reveal" aria-labelledby="project-got">
             <div class="project-image">
-              <div class="project-image-placeholder" role="img" aria-label="MY GOT Project"></div>
+              <div class="project-image-placeholder" role="img" aria-label="MY GOT Project"><img src="imgs/Site GOT.png" alt="">Site Game of Thrones</div>
             </div>
             <div class="project-body">
-              <h3 class="project-title" id="project-got">MY GOT Project</h3>
+              <h3 class="project-title" id="project-got">Projeto GOT</h3>
               <p class="project-desc">
                 Projeto temático inspirado em Game of Thrones. Conteúdo e interface alinhados ao universo da série.
               </p>
@@ -202,7 +176,7 @@
 
           <article class="project-card reveal reveal-delay-2" aria-labelledby="project-timao">
             <div class="project-image">
-              <div class="project-image-placeholder project-image-placeholder--alt2" role="img" aria-label="Poderoso Timão"></div>
+              <div class="project-image-placeholder project-image-placeholder--alt2" role="img" aria-label="Poderoso Timão"><img src="imgs/site Corinthians.png" alt="">Site Timão</div>
             </div>
             <div class="project-body">
               <h3 class="project-title" id="project-timao">Poderoso Timão</h3>
@@ -222,15 +196,14 @@
               </div>
             </div>
           </article>
-
-          <article class="project-card reveal" aria-labelledby="project-forca">
+          <article class="project-card reveal" aria-labelledby="project-pinnedloading">
             <div class="project-image">
-              <div class="project-image-placeholder" role="img" aria-label="Forca"></div>
+              <div class="project-image-placeholder" role="img" aria-label="PinnedLoading"><img src="imgs/Site Sucesso.png" alt=""></div>
             </div>
             <div class="project-body">
-              <h3 class="project-title" id="project-forca">Forca</h3>
+              <h3 class="project-title" id="project-pinnedloading">Caminho do Sucesso (Feito com IA)</h3>
               <p class="project-desc">
-                Jogo da forca em versão web. Interação por teclado, feedback visual e lógica em JavaScript.
+                Projeto teste, um preparatório para vestibulares, feito com auxilio de inteligência artificial.
               </p>
               <div class="project-tech" aria-label="Tecnologias">
                 <span>HTML</span>
@@ -238,7 +211,7 @@
                 <span>JavaScript</span>
               </div>
               <div class="project-links">
-                <a href="https://github.com/PRADOZZZ/forca" class="btn btn-secondary" target="_blank" rel="noopener noreferrer" aria-label="Ver repositório Forca no GitHub">
+                <a href="https://github.com/PRADOZZZ/PinnedLoading" class="btn btn-secondary" target="_blank" rel="noopener noreferrer" aria-label="Ver repositório PinnedLoading no GitHub">
                   <i data-lucide="github" aria-hidden="true"></i>
                   GitHub
                 </a>
@@ -253,22 +226,26 @@
       <div class="container">
         <div class="about-inner">
           <div class="about-content">
-            <h2 class="section-title reveal" id="about-title">Sobre mim</h2>
+            <h2 class="section-title reveal" id="about-title"><strong>Sobre mim </strong></h2>
             <p class="reveal">
-              Sou <strong>Eduardo Prado da Silva</strong>, desenvolvedor focado em criar experiências digitais que entregam <strong>valor real</strong>: código limpo, interfaces claras e boa performance.
+              Sou <strong>Eduardo Prado</strong>, desenvolvedor focado em criar experiências digitais que entregam <strong>valor real</strong>: código limpo, interfaces claras e boa performance.
             </p>
             <p class="reveal">
               Unindo <strong>criatividade e técnica</strong>, trabalho cada projeto com atenção a usabilidade e manutenção. Gosto de desafios complexos e de evoluir com cada entrega.
             </p>
             <div class="about-value reveal">
-              <p><strong>O que eu entrego:</strong> soluções pensadas para escalar, fáceis de usar e alinhadas às melhores práticas de acessibilidade e SEO.</p>
+              <p><strong>Minha Filosofia: </strong>  <br><br>
+                Código limpo.  <br>
+                Design funcional.  <br>
+                Experiência em primeiro lugar.</p>
             </div>
           </div>
           <div class="about-skills">
-            <h3 class="reveal">Ferramentas e habilidades</h3>
-            <div class="skills-grid reveal">
+            <h3 class="reveal"><strong>Ferramentas e habilidades</strong></h3>
+       <br><br>     <div class="skills-grid reveal">
               <span class="skill-tag">HTML / CSS</span>
               <span class="skill-tag">JavaScript</span>
+               <span class="skill-tag">Python</span> 
               <span class="skill-tag">React</span>
               <span class="skill-tag">Git</span>
               <span class="skill-tag">Responsivo</span>
@@ -284,7 +261,7 @@
     <section class="section contact" id="contact" aria-labelledby="contact-title">
       <div class="container">
         <h2 class="section-title reveal" id="contact-title">Contato</h2>
-        <p class="section-subtitle reveal">
+  <br><br><br>      <p class="section-subtitle reveal">
           Quer conversar sobre um projeto ou oportunidade? Entre em contato.
         </p>
         <div class="contact-grid">
@@ -316,7 +293,7 @@
 
   <footer class="footer" role="contentinfo">
     <div class="footer-inner">
-      <p>© 2025 Eduardo Prado. Todos os direitos reservados.</p>
+      <p class="direitos">© Eduardo Prado.</p>
       <div class="footer-social" aria-label="Redes sociais">
         <a href="https://github.com/PRADOZZZ" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
           <i data-lucide="github"></i>

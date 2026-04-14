@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Eduardo Prado da Silva — Desenvolvedor Front-End. Portfólio com projetos, habilidades e contato. Soluções digitais com foco em experiência e performance.">
+  <meta name="keywords" content="desenvolvedor, front-end, portfólio, Eduardo Prado, desenvolvimento web, React, JavaScript">
+  <meta name="author" content="Eduardo Prado da Silva">
+  <meta property="og:title" content="Eduardo Prado — Desenvolvedor Front-End">
+  <meta property="og:description" content="Portfólio profissional: projetos, habilidades e contato.">
+  <meta property="og:type" content="website">
+  <title>Eduardo Prado — Desenvolvedor Front-End | Portfólio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest" defer></script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Ir para o conteúdo principal</a>
+
+  <header class="nav" id="nav" role="banner">
+    <div class="nav-inner container">
+      <a class="nav-logo" href="#hero" aria-label="Ir para o topo">Prado<span>.</span></a>
+      <nav class="nav-links" id="navLinks" role="navigation" aria-label="Menu principal">
+        <a href="#hero" data-section="hero">Início</a>
+        <a href="#projects" data-section="projects">Projetos</a>
+        <a href="#about" data-section="about">Sobre</a>
+        <a href="#contact" data-section="contact">Contato</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero-full" id="hero">
+      <div class="hero-overlay">
+        <img src="imgs/PRADO@.png" alt="Eduardo Prado">
+      </div>
+      <div class="hero-content">
+        <h1 class="hero-title">Eduardo Prado</h1>
+        <p class="hero-role">CONSTRUTOR DE EXPERIÊNCIAS DIGITAIS</p>
+        <div class="hero-ctas">
+          <a href="#projects" class="btn btn-primary">Projetos</a>
+          <a href="#contact" class="btn btn-secondary">Contato</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <h2 class="section-title reveal" id="projects-title">Projetos</h2>
+        <div class="projects-grid">
+          <article class="project-card reveal" aria-labelledby="project-pinnedloading">
+            <div class="project-image">
+              <div class="project-image-placeholder" role="img" aria-label="PinnedLoading"></div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title" id="project-pinnedloading">Pinned Loading</h3>
+              <p class="project-desc">
+                Componente de loading e estados de carregamento para interfaces. Skeleton e feedback visual para melhor UX.
+              </p>
+              <div class="project-tech" aria-label="Tecnologias">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/PRADOZZZ/PinnedLoading" class="btn btn-secondary" target="_blank" rel="noopener noreferrer" aria-label="Ver repositório PinnedLoading no GitHub">
+                  <i data-lucide="github" aria-hidden="true"></i>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal reveal-delay-1" aria-labelledby="project-vozes">
+            <div class="project-image">
+              <div class="project-image-placeholder project-image-placeholder--alt" role="img" aria-label="Vozes Silenciadas"><img src="imgs/vozes silenciadas.png" alt="Vozes Silenciadas"></div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title" id="project-vozes">Vozes Silenciadas</h3>
+              <p class="project-desc">
+                Projeto web com foco em narrativa e conscientização. Interface imersiva e acessível.
+              </p>
+              <div class="project-tech" aria-label="Tecnologias">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/PRADOZZZ/Vozes-Silenciada" class="btn btn-secondary" target="_blank" rel="noopener noreferrer" aria-label="Ver repositório Vozes Silenciadas no GitHub">
+                  <i data-lucide="github" aria-hidden="true"></i>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal reveal-delay-2" aria-labelledby="project-caminho">
+            <div class="project-image">
+              <div class="project-image-placeholder project-image-placeholder--alt2" role="img" aria-label="Caminho do Sucesso"></div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title" id="project-caminho">Caminho do Sucesso</h3>
+              <p class="project-desc">
+                Aplicação voltada a produtividade e metas. Organização visual e fluxo claro para objetivos.
+              </p>
+              <div class="project-tech" aria-label="Tecnologias">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/PRADOZZZ/Caminho-do-Sucesso" class="btn btn-secondary" target="_blank" rel="noopener noreferrer" aria-label="Ver repositório Caminho do Sucesso no GitHub">
+                  <i data-lucide="github" aria-hidden="true"></i>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" aria-labelledby="project-got">
+            <div class="project-image">
+              <div class="project-image-placeholder" role="img" aria-label="MY GOT Project"><img src="imgs/Site GOT.png" alt="Site Game of Thrones"></div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title" id="project-got">Projeto GOT</h3>
+              <p class="project-desc">
+                Projeto temático inspirado em Game of Thrones. Conteúdo e interface alinhados ao universo da série.
+              </p>
+              <div class="project-tech" aria-label="Tecnologias">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/PRADOZZZ/MY-GOT-PROJECT" class="btn btn-secondary" target="_blank" rel="noopener noreferrer" aria-label="Ver repositório MY GOT Project no GitHub">
+                  <i data-lucide="github" aria-hidden="true"></i>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal reveal-delay-1" aria-labelledby="project-portfolio">
+            <div class="project-image">
+              <div class="project-image-placeholder project-image-placeholder--alt" role="img" aria-label="Portfólio Prado"></div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title" id="project-portfolio">Portfólio Prado</h3>
+              <p class="project-desc">
+                Site de portfólio profissional. Apresentação de projetos, habilidades e contato com foco em clareza e performance.
+              </p>
+              <div class="project-tech" aria-label="Tecnologias">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/PRADOZZZ/PORTFF-LIO-PRADO" class="btn btn-secondary" target="_blank" rel="noopener noreferrer" aria-label="Ver repositório Portfólio Prado no GitHub">
+                  <i data-lucide="github" aria-hidden="true"></i>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal reveal-delay-2" aria-labelledby="project-timao">
+            <div class="project-image">
+              <div class="project-image-placeholder project-image-placeholder--alt2" role="img" aria-label="Poderoso Timão"><img src="imgs/site Corinthians.png" alt="Site Timão"></div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title" id="project-timao">Poderoso Timão</h3>
+              <p class="project-desc">
+                Projeto temático sobre o Corinthians. Layout e conteúdo voltados ao torcedor e à identidade do time.
+              </p>
+              <div class="project-tech" aria-label="Tecnologias">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/PRADOZZZ/Poderoso-Tim-o" class="btn btn-secondary" target="_blank" rel="noopener noreferrer" aria-label="Ver repositório Poderoso Timão no GitHub">
+                  <i data-lucide="github" aria-hidden="true"></i>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" aria-labelledby="project-ia">
+            <div class="project-image">
+              <div class="project-image-placeholder" role="img" aria-label="Caminho do Sucesso com IA"><img src="imgs/Site Sucesso.png" alt="Caminho do Sucesso com IA"></div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title" id="project-ia">Caminho do Sucesso (Com IA)</h3>
+              <p class="project-desc">
+                Projeto preparatório para vestibulares, feito com auxílio de inteligência artificial.
+              </p>
+              <div class="project-tech" aria-label="Tecnologias">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/PRADOZZZ/PinnedLoading" class="btn btn-secondary" target="_blank" rel="noopener noreferrer" aria-label="Ver repositório Caminho do Sucesso com IA no GitHub">
+                  <i data-lucide="github" aria-hidden="true"></i>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="about-inner">
+          <div class="about-content">
+            <h2 class="section-title reveal" id="about-title">Sobre mim</h2>
+            <p class="reveal">
+              Sou <strong>Eduardo Prado</strong>, desenvolvedor focado em criar experiências digitais que entregam <strong>valor real</strong>: código limpo, interfaces claras e boa performance.
+            </p>
+            <p class="reveal">
+              Unindo <strong>criatividade e técnica</strong>, trabalho cada projeto com atenção a usabilidade e manutenção. Gosto de desafios complexos e de evoluir com cada entrega.
+            </p>
+            <div class="about-value reveal">
+              <p><strong>Minha Filosofia:</strong></p>
+              <ul>
+                <li>Código limpo</li>
+                <li>Design funcional</li>
+                <li>Experiência em primeiro lugar</li>
+              </ul>
+            </div>
+          </div>
+          <div class="about-skills">
+            <h3 class="reveal">Ferramentas e Habilidades</h3>
+            <div class="skills-grid reveal">
+              <span class="skill-tag">HTML / CSS</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">Responsivo</span>
+              <span class="skill-tag">Acessibilidade</span>
+              <span class="skill-tag">Performance</span>
+              <span class="skill-tag">Figma</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 class="section-title reveal" id="contact-title">Contato</h2>
+        <p class="section-subtitle reveal">
+          Quer conversar sobre um projeto ou oportunidade? Entre em contato.
+        </p>
+        <div class="contact-grid">
+          <a href="mailto:eduardo.prado.dev@gmail.com" class="contact-item reveal" aria-label="Enviar e-mail para eduardo.prado.dev@gmail.com">
+            <i data-lucide="mail" aria-hidden="true"></i>
+            <div>
+              <strong>E-mail</strong>
+              <span>eduardo.prado.dev@gmail.com</span>
+            </div>
+          </a>
+          <a href="https://www.instagram.com/nbk_pradoz/" class="contact-item reveal reveal-delay-1" target="_blank" rel="noopener noreferrer" aria-label="Abrir perfil no Instagram">
+            <i data-lucide="instagram" aria-hidden="true"></i>
+            <div>
+              <strong>Instagram</strong>
+              <span>@nbk_pradoz</span>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/eduardo-prado-da-silva-73022524b/" class="contact-item reveal reveal-delay-2" target="_blank" rel="noopener noreferrer" aria-label="Abrir perfil no LinkedIn">
+            <i data-lucide="linkedin" aria-hidden="true"></i>
+            <div>
+              <strong>LinkedIn</strong>
+              <span>Eduardo Prado da Silva</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <p>© Eduardo Prado.</p>
+      <div class="footer-social" aria-label="Redes sociais">
+        <a href="https://github.com/PRADOZZZ" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <i data-lucide="github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/eduardo-prado-da-silva-73022524b/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <i data-lucide="linkedin"></i>
+        </a>
+        <a href="https://www.instagram.com/nbk_eduardo/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <i data-lucide="instagram"></i>
+        </a>
+        <a href="https://x.com/tatatreze_nbk" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+          <i data-lucide="twitter"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
